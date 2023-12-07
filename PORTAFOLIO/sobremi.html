@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página con Index</title>
+<link rel="stylesheet" href="sobremi.css">
+</head>
+<body>
+    <section>
+        <header>
+            <h2 class="logo"><span>D</span>EYTON</h2>
+        
+            <nav class="navegacion">
+               <a href="index.html">INICIO</a>
+               <a href="sobremi.html">SOBRE MI</a>
+               <a href="portafolio.html">PORTAFOLIO</a>
+               <a href="contacto.html">CONTACTO</a>
+    
+            </nav>
+            <a href="#" class="btn-hablar" onclick="openModal()">HABLEMOS</a>
+
+            <!-- Modal -->
+            <div id="modal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="social-media">
+                  <div class="social-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="Facebook Logo" class="social-logo">
+                    <p>Deyton Garcia Avalos</p>
+                  </div>
+                  <div class="social-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png" alt="WhatsApp Logo" class="social-logo">
+                    <p>+51 945328101</p>
+                  </div>
+                  <div class="social-item">
+                    <img src="https://static.vecteezy.com/system/resources/previews/013/948/544/non_2x/gmail-logo-on-transparent-white-background-free-vector.jpg" alt="Gmail Logo" class="social-logo">
+                    <p>deyton.garcia@vallegrande.edu.pe.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </header>
+    </section>
+    <div id="container">
+      <img id="image" src="img/5b8b834c-944e-4bd1-a527-7711cd45096d.jpeg" alt="Imagen Animada">
+      <div id="text">
+        <h1>MI PRESENTACIÓN </h1>
+        <p>¡Hola! Bienvenidos a mi presentación. Soy Deyton, un analista de sistemas que actualmente estudia en Vallegrande. Me apasiona el mundo de la tecnología y me especializo en áreas como Scripting, Bases de Datos, Visualización y Vertabelo.
+
+          Como experto en Scripting, tengo habilidades en lenguajes como Python, JavaScript y Bash, lo que me permite automatizar tareas y procesos para mejorar la eficiencia en el trabajo.
+          
+          En cuanto a bases de datos, soy capaz de diseñar y administrar bases de datos utilizando herramientas como MySQL, PostgreSQL y Oracle. Además, tengo experiencia en la creación de consultas complejas y en la optimización del rendimiento de las bases de datos.
+          
+          En el área de visualización, he trabajado con herramientas como Tableau y Power BI para crear informes y visualizaciones de datos que ayudan a los usuarios a tomar decisiones informadas.
+          
+          Por último, mi experiencia con Vertabelo me ha permitido diseñar y modelar bases de datos complejas de manera eficiente y efectiva.</p>
+      </div>
+      <div id="interactive-boxes" class="interactive-boxes">
+        <div class="interactive-box" onclick="changeImage('imagen1.jpg')">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_Apps_Script.svg/800px-Google_Apps_Script.svg.png" alt="Imagen 1">
+        </div>
+        <div class="interactive-box" onclick="changeImage('imagen2.jpg')">
+          <img src="https://pbs.twimg.com/profile_images/1545098208556097536/rKXaODLl_400x400.jpg" alt="Imagen 2">
+        </div>
+        <div class="interactive-box" onclick="changeImage('imagen3.jpg')">
+          <img src="https://isil.pe/blog/wp-content/uploads/2023/05/base-datos-info-1.png" alt="Imagen 3">
+        </div>
+        <div class="interactive-box" onclick="changeImage('imagen4.jpg')">
+          <img src="https://support.vertabelo.com/s/attachments/13484/0/0/project_logo.jpg" alt="Imagen 4">
+        </div>
+      </div>
+    </div>
+  
+    <script>
+      function changeImage(newImage) {
+        document.getElementById('image').src = newImage;
+      }
+    </script>
+        <script src="portafolio.js"></script>
+
+</body>
+</html>

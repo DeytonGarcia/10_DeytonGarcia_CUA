@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <section>
+    <header>
+        <h2 class="logo"><span>D</span>EYTON</h2>
+    
+        <nav class="navegacion">
+           <a href="index.html">INICIO</a>
+           <a href="sobremi.html">SOBRE MI</a>
+           <a href="portafolio.html">PORTAFOLIO</a>
+           <a href="contacto.html">CONTACTO</a>
+
+        </nav>
+        <a href="#" class="btn-hablar" onclick="openModal()">HABLEMOS</a>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="social-media">
+              <div class="social-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="Facebook Logo" class="social-logo">
+                <p>Deyton Garcia Avalos</p>
+              </div>
+              <div class="social-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png" alt="WhatsApp Logo" class="social-logo">
+                <p>+51 945328101</p>
+              </div>
+              <div class="social-item">
+                <img src="https://static.vecteezy.com/system/resources/previews/013/948/544/non_2x/gmail-logo-on-transparent-white-background-free-vector.jpg" alt="Gmail Logo" class="social-logo">
+                <p>deyton.garcia@vallegrande.edu.pe.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+</section>
+<section class="formulario-seccion">
+    <img src="https://visionarios.pe/wp-content/uploads/2022/03/educacion-instituto-01.jpg" alt="Imagen de ejemplo" class="imagen-izquierda">
+    <div class="formulario-container">
+        <h2>CONTACTO</h2>
+        <form action="#" method="post">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" pattern="[A-Za-záéíóúüñÁÉÍÓÚÜÑ\s]+" title="Solo letras y espacios, sin números" required>
+        
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        
+            <div class="whatsapp-input">
+                <label for="whatsapp">WhatsApp:</label>
+                <div class="whatsapp-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png" alt="WhatsApp Logo">
+                    <input type="tel" id="whatsapp" name="whatsapp" pattern="[0-9]+" title="Solo números" placeholder="Ingresa tu numero" required>
+                </div>
+            </div>
+        
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
+<script src="portafolio.js"></script>
+
+</body>
+</html>
